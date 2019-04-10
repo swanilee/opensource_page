@@ -14,7 +14,7 @@ body {
 }
 
 body {
-    font-family: 'Questrial', 'Helvetica Neue', Arial, sans-serif;
+    font-family:'Questrial', 'Helvetica Neue', Arial, sans-serif;
     background-color: #282828;
     color: #d3d3d3;
     webkit-tap-highlight-color: #222;
@@ -126,7 +126,7 @@ footer {
 
 .navbar-header>.navbar-brand {
     font-family: 'Questrial', 'Helvetica Neue', Arial, sans-serif;
-    color: #D80042;
+    color: #000000;
     padding: 15px;
     -webkit-transition: padding .2s ease-in;
     -moz-transition: padding .2s ease-in;
@@ -172,6 +172,12 @@ footer {
     background-color: transparent;
 }
 
+.navbar-header>.navbar-brand {
+        /*color: #000000;*/
+        color: rgba(255, 255, 255, 0.7);
+        padding: 10px;
+}
+
 @media(min-width:768px) {
     .navbar-default {
         border-color: transparent;
@@ -179,6 +185,7 @@ footer {
         min-height: 60px;
     }
     .navbar-header>.navbar-brand {
+        /*color: #000000;*/
         color: rgba(255, 255, 255, 0.7);
         padding: 19px;
     }
@@ -229,7 +236,7 @@ header {
     color: #fff;
     width: 100%;
     background-color: #c9c9c9;
-    background-image: url('/css/haha.jpeg');
+    background-image: url('/css/back-img.jpg');
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
