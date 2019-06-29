@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SEON GYEONG</title>
+    <meta name="description" content="This is a free Bootstrap landing page theme created for BootstrapZero. Feature video background and one page design." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Codeply">
+    <meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/animate.min.css" />
+    <link rel="stylesheet" href="./css/ionicons.min.css" />
+    <link rel="stylesheet" href="./css/styles3.css" />
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+  </head>
+
+
+  <body>
+    <nav id="topNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#first"><i class="ion-ios-analytics-outline"></i> S.G</a>
+            </div>
+            <div class="navbar-collapse collapse" id="bs-navbar">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a class="page-scroll" href="#one">ABOUT THIS</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#two">ASSIGN</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#three">INFORMATION</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#four">CONTACT</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" data-toggle="modal" title="A free Bootstrap video landing theme" href="#aboutModal">WONDER?!</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header id="first">
+        <div class="header-content">
+            <div class="inner">
+                <h1 class="cursive">Opensource Final</h1>
+                <h4>Assign ver3. accessing opensource code</h2>
+                <hr>
+                <br />
+                <h4>이 페이지는 오픈소스수업( 윤요섭 교수님)의 마지막 3번째 과제를 위해 작성된 페이지 입니다.</h4>
+                <h4>저는 <a href="https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix">Pix2pix </a>라는 오픈소스를 실습하였습니다.</h4>
+                <h4>환경을 설정하는 과정이나, 실행을 해보는 단계에서 많은 배움을 얻었습니다. </h4>
+                <h4>출처 github 주소는 위의 키워드에 링크를 걸어두었습니다!</h4>
+                <h4>문의 사항이 있으시면 ssunkyung00@gmail.com 으로 연락 부탁드립니다.</h4>
+                <br />
+                <br />
+                <br />
+                <br />
+                <a href="#one" class="btn btn-primary btn-xl page-scroll">Get Started</a>
+            </div>
+        </div>
+        <video autoplay="" loop="" class="fillWidth fadeIn wow collapse in" data-wow-delay="0.5s" poster="https://s3-us-west-2.amazonaws.com/coverr/poster/Traffic-blurred2.jpg" id="video-background">
+           <source src="https://youtu.be/ulr0muQKjk0" type="video/mp4" />
+        </video>
+    </header>
+    <section class="bg-primary" id="one">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 text-center" alt="">
+                    <h2 class="margin-top-0 text-primary">Pix2pix Opensource Training </h2>
+                    <br>
+                    <h5>총 14 단계로 구성되며, 사진아래에 세부 설명이 적혀 있습니다.</h5>
+                    <h5>코드 편집기로는 visual code를 사용하였습니다.</h5>
+
+                    <span>
+                      <br />
+                    <h5>1.</h5>
+                    <h4> [  설치 환경  ]</h4>
+                    <br />
+                    <h5> # OS : Linux </h5>
+                    <h5> # Python : 3.7.1 </h5>
+                    <h5> # GPU : NVIDIA GEFORCE 940MX </h5>
+                    <h5> # CUDA : CUDA CuDNN 7.3.1</h5>
+                    <br>
+                    <h5> Anaconda VirtualEnvironment에서 패키지를 설치하였습니다. </h5>
+                    <h5> 다음은 제가 설치한 가상환경 패키지 목록 캡처 이미지입니다. </h5>
+
+                    <br>
+                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="/assi2_img/app1_start_server.png">
+                        <img src="/assi3_img/env-pack.list.png" class="img-responsive" alt="Image 3">
+                        <div class="gallery-box-caption">
+                            <div class="gallery-box-content">
+                                <div>
+                                    <i class="icon-lg ion-ios-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <br>
+                    <p class="text-faded">
+                        저의 경우 readme 파일을 읽고, 설치를 하였지만,<br>
+                        cudnn을 불러오지못해 다시 설치를 해주었습니다. 
+                        <br>
+                        또한 이후에 계속해서 일련의 패키지 오류가 발생하여
+                        검색을 해본결과 <br>정확히는 나와있지 않았지만, pip update를 진행하고 numpy를 직접
+                        다시 설정을 해주니 오류가 해결되었습니다. :)
+                        <br>
+                        <h4># 가상환경 리스트 보기 : conda env list</h4>
+                        <h4># 가상환경 활성화 : conda activate MyEnvironmentName</h4>
+                        <h4># 가상환경 비활성화 : conda deactivate</h4>
+                        <h4># 가상환경 패키지 내보내기 명령어 : conda list --explicit > spec-file.txt 
+                            ( ~.txt 에서 ~부분에는 원하시는 파일명을 입력하시면 됩니다.)</h4>
+                        <h4># 가상환경을 새로 만들면서 패키지 설치 : conda create --name MyEnvironmentName --file spec-file.txt</h4>
+                        <h4># 기존의 가상환경에 패키지 설치 : conda install --name MyEnvironmentName --file spec-file.txt</h4> 
+                    </p>
+                    <br>
+
+                    <br />
+                    </span>
+
+                    <span>
+                    <h5>2.</h5>
+                    <h4> [  Pix2pix train/test Access  ]</h4>
+                    <br>
+                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="/assi2_img/app1_make_json3.png">
+                        <img src="/assi3_img/pix2pix-access.png" class="img-responsive" alt="Image 3">
+                        <div class="gallery-box-caption">
+                            <div class="gallery-box-content">
+                                <div>
+                                    <i class="icon-lg ion-ios-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <br>
+                    <h4> python train.py 이후 "--example"  이러한 옵션들은 <br>개인적으로 커스텀 할 수 있습니다.</h4>
+                    <h4> 학습 결과나 손실률을 쉽게 보기위한 시각적효과 기능을 제공하는데, 그 기능을 사용하려면
+                     학습지시 코드 실행전 python -m visdom.server 코드를 입력합니다. 이후, http://localhost:8097 에서 볼 수 있습니다.</h4>
+                    <h4> 뿐만아니라 ./results/데이터셋명/test_latest/index.html 에 들어가면 scripts 를 확인할 수 있습니다.</h4>
+                    <br>
+                    <h4>학습에 들어가기 앞서, 나의 경우 저 학습코드를 실행하였었을때 cuda out of memory 오류를 받았습니다.</h4>
+                    <h4> 자세한 이유는 알 수 없지만 학습코드에 gpu 옵션을 추가해주지않으면 cpu로 동작이 되기에 발생하는 오류 같았습니다.</h4>
+                    <h4> 우선 gpu를 사용하여 학습을 진행하기 위해서는 저 코드에 하나의 옵션을 추가해주어야합니다.</h4>
+                    <br>
+                    <h4> # GPU 동작 여부 명령어 옵션 : --gpu_ids -1 </h4>
+                    <br>
+                    <h4>위의 명령어를 입력하였을때 정상적으로 작동하였습니다. </h4>
+                    <h4> 이부분의 내용은 <a href="https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/blob/master/docs/tips.md#notes-on-colorization">tips</a>에서 참고하였습니다.</h4>
+                    <br>
+                    </span>
+
+                     <span>
+                    <h5>3.</h5>
+                    <h4> [  동작, 결과 확인   ]</h4>
+                    <br>
+                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="/assi2_img/app3_1.png">
+                        <img src="/assi3_img/start_access.png" class="img-responsive" alt="Image 3">
+                        <br>
+                        <br>
+                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="/assi2_img/app3_3.png">
+                        <img src="/assi3_img/success.png" class="img-responsive" alt="Image 3">
+                        <div class="gallery-box-caption">
+                            <div class="gallery-box-content">
+                                <div>
+                                    <i class="icon-lg ion-ios-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <br>
+                    <p class="text-faded">
+                      위와 같이 설정해준 옵션을 한번 쫙 보여주고 학습이 진행되며 visdom.server에서는 학습되는것이 시각적으로 보여집니다.
+                      ( 옵션을 따로 지정해주지 않았다면 모두 default 값으로 진행됩니다 )
+                    </p>
+                    <br />
+                    </span>
+
+
+
+                    <p class="text-faded">
+                        -----------------------------------------------------<br><br>
+                        지금까지 2019 오픈소스수업의 <br>
+                        오픈소스 실행 실습이었습니다.<br>
+                        한학기동안 정말 많은것을 배우고 직접 실습해보면서
+                        <br>
+                        제대로된 공부를 할 수 있었던 것 같습니다.
+                        <br>
+                        감사합니다:)
+                        <br>
+                        <br>
+
+                        _IT융합응용공학과 201530204 이선경
+                    </p>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <aside class="bg-dark">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <h2 class="text-primary">Visit my sns</h2>
+                <a href="https://www.instagram.com/cineraria_" target="ext" class="btn btn-default btn-lg wow flipInX">Go to the instragram</a>
+            </div>
+            <br>
+            <hr/>
+            <br>
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <div class="row">
+                        <h6 class="wide-space text-center">Visit my instagram account, and follow my account!</h6>
+
+
+                        <div class="col-sm-3 col-xs-6 text-center">
+                            <img type="image_icon" src="https://instagram-press.com/wp-content/uploads/2016/11/img-instagram-w.png"  style="margin-left:409px" >
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <footer id="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-6 col-sm-3 column">
+                    <h4>My information</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="">hobby</a></li>
+                        <li><a href="">music</a></li>
+                        <li><a href="">movie</a></li>
+                        <li><a href="">photo</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-3 column">
+                    <h4>About</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">If you wonder,</a></li>
+                        <li><a href="#">about me</a></li>
+                        <li><a href="#">Just click the button</a></li>
+                        <li><a href="#">fun &amp; uniqe</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 column">
+                    <h4>Do you wnat to send this page link?</h4>
+                    <form>
+                        <div class="form-group">
+                          <input type="text" class="form-control" title="No spam, we promise!" placeholder="input address!">
+                        </div>
+                        <div class="form-group">
+                          <button class="btn btn-primary" data-toggle="modal" data-target="#alertModal" type="button">send the link</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-xs-12 col-sm-3 text-right">
+                    <h4>Follow</h4>
+                    <ul class="list-inline">
+                      <li><a rel="nofollow" href="" title="Twitter"><i class="icon-lg ion-social-twitter-outline"></i></a>&nbsp;</li>
+                    </ul>
+                </div>
+            </div>
+            <br/>
+            <span class="pull-right text-muted small"><a href="http://www.bootstrapzero.com">SeonGyeong 's individual homepage.</a> ©2017 seon gyeong</span>
+        </div>
+    </footer>
+    <div id="galleryModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        	<div class="modal-body">
+        		<img src="" id="galleryImage" class="img-responsive" />
+        		<p>
+        		    <br/>
+        		    <button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">Close <i class="ion-android-close"></i></button>
+        		</p>
+        	</div>
+        </div>
+        </div>
+    </div>
+    <div id="aboutModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+        	<div class="modal-body">
+        		<h2 class="text-center">Landing Zero Theme</h2>
+        		<h5 class="text-center">
+        		    A free, responsive landing page theme built by BootstrapZero.
+        		</h5>
+        		<p class="text-justify">
+        		    This is a single-page Bootstrap template with a sleek dark/grey color scheme, accent color and smooth scrolling.
+        		    There are vertical content sections with subtle animations that are activated when scrolled into view using the jQuery WOW plugin. There is also a gallery with modals
+        		    that work nicely to showcase your work portfolio. Other features include a contact form, email subscribe form, multi-column footer. Uses Questrial Google Font and Ionicons.
+        		</p>
+        		<p class="text-center"><a href="http://www.bootstrapzero.com">Download at BootstrapZero</a></p>
+        		<br/>
+        		<button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true"> OK </button>
+        	</div>
+        </div>
+        </div>
+    </div>
+    <div id="alertModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+        	<div class="modal-body">
+        		<h2 class="text-center">Nice Job!</h2>
+        		<p class="text-center">You clicked the button, but it doesn't actually go anywhere because this is only a demo.</p>
+        		<p class="text-center"><a href="http://www.bootstrapzero.com">Learn more at BootstrapZero</a></p>
+        		<br/>
+        		<button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">OK <i class="ion-android-close"></i></button>
+        	</div>
+        </div>
+        </div>
+    </div>
+    <!--scripts loaded here -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery.easing.min.js"></script>
+    <script src="./js/wow.js"></script>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
